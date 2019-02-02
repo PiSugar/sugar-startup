@@ -54,7 +54,12 @@ apt-get -y install nginx
 sudo rm -rf /var/www/html
 sudo git clone https://github.com/ziahamza/webui-aria2.git /var/www/html
 
-sudo apt-get autoremove
+
+echo -e "####安装phddns花生壳动态解析客户端####"
+wget http://download.oray.com/peanuthull/embed/phddns_rapi_3.0.2.armhf.deb
+sudo dpkg -i phddns_rapi_3.0.2.armhf.deb
+
+sudo apt-get -y autoremove
 
 echo "############finish start setting,enjoy.Now reboot############"
 sudo reboot
