@@ -18,7 +18,8 @@ sudo apt-get install -y fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-
 
 echo -e "########install xrdp 安装远程桌面#############"
 sudo apt-get install xrdp
-
+echo -e "########install xrdp 安装screen#############"
+sudo apt-get install screen
 
 echo -e "########starting intall syncthing 开始安装syncthing#############"
 echo -e "###download syncthing 下载syncthing####"
@@ -53,7 +54,7 @@ apt-get -y install nginx
 sudo rm -rf /var/www/html
 sudo git clone https://github.com/ziahamza/webui-aria2.git /var/www/html
 
-
+sudo apt-get autoremove
 
 echo "############finish start setting,enjoy.Now reboot############"
 sudo reboot
