@@ -18,7 +18,7 @@ sudo apt-get install -y fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-
 
 echo -e "########install xrdp 安装远程桌面#############"
 sudo apt-get install -y xrdp
-echo -e "########install xrdp 安装screen#############"
+echo -e "########install screen 安装screen#############"
 sudo apt-get install -y screen
 
 echo -e "########starting intall syncthing 开始安装syncthing#############"
