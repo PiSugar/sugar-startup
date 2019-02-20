@@ -6,5 +6,4 @@ Shell scripts to start your raspberry pi project.
 只需要执行：
 
 `git clone https://github.com/PiSugar/sugar-startup.git
-sudo -s . ./sugar-startup/Pisugarstartup/start.sh
-`
+sudo -s . ./sugar-startup/Pisugarstartup/start.sh`
