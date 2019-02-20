@@ -11,9 +11,9 @@ sudo -s . ./sugar-startup/Pisugarstartup/start.sh
 初始化脚本执行以下内容：
 
 
-*更改国内镜像源
+*更改国内镜像源*
 
-*更新系统
+* 更新系统 *
 
 *安装拼音输入法
 
