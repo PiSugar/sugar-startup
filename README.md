@@ -4,4 +4,4 @@ test
 
 
 git clone https://github.com/PiSugar/sugar-startup.git
-sudo -s ./sugar-startup/start.sh
+sudo -s . ./sugar-startup/Pisugarstartup/start.sh
