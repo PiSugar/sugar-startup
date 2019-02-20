@@ -17,9 +17,9 @@ echo -e "########install pinyin 安装拼音输入法#############"
 sudo apt-get install -y fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin
 
 echo -e "########install xrdp 安装远程桌面#############"
-sudo apt-get install -y xrdp
+sudo apt-get install xrdp
 echo -e "########install xrdp 安装screen#############"
-sudo apt-get install -y screen
+sudo apt-get install screen
 
 echo -e "########starting intall syncthing 开始安装syncthing#############"
 echo -e "###download syncthing 下载syncthing####"
@@ -53,7 +53,6 @@ echo -e "####安装webUI（需用IP/docs 访问）####"
 apt-get -y install nginx
 sudo rm -rf /var/www/html
 sudo git clone https://github.com/ziahamza/webui-aria2.git /var/www/html
-
 
 echo -e "####安装phddns花生壳动态解析客户端####"
 wget http://download.oray.com/peanuthull/embed/phddns_rapi_3.0.2.armhf.deb
