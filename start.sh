@@ -33,7 +33,6 @@ mv ${syncthingversion}-${syncthingrelease} syncthing
 echo -e "####增加执行权限####"
 cd syncthing
 sudo chmod +x syncthing
-/home/pi/syncthing/syncthing
 echo -e "####开启网络访问####"
 sed -i "s/127.0.0.1/0.0.0.0/g" $file
 echo -e "####以服务的方式后台运行####"
