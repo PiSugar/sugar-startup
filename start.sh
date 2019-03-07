@@ -4,6 +4,7 @@ syncthingrelease="v1.0.1-rc.2"
 syncthingaddress="https://github.com/syncthing/syncthing/releases/download/"
 syncthingversion="syncthing-linux-arm"
 source="https://mirrors.tuna.tsinghua.edu.cn"
+file="/home/pi/.config/syncthing/config.xml"
 
 
 echo -e "########edit resource 更改镜像源#############"
@@ -32,6 +33,8 @@ mv ${syncthingversion}-${syncthingrelease} syncthing
 echo -e "####增加执行权限####"
 cd syncthing
 sudo chmod +x syncthing
+~/syncthing/syncthing
+sed -i "s/127.0.0.1/0.0.0.0/g" $file
 echo -e "####以服务的方式后台运行####"
 sudo cp ${startuppath}/syncthing /etc/init.d/
 sudo chmod +x /etc/init.d/syncthing
