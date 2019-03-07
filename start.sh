@@ -1,5 +1,5 @@
 #/bin/bash
-startuppath='/home/pi/data'
+startuppath='/home/pi/sugar-startup/data'
 syncthingrelease="v1.0.1-rc.2"
 syncthingaddress="https://github.com/syncthing/syncthing/releases/download/"
 syncthingversion="syncthing-linux-arm"
