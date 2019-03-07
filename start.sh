@@ -33,13 +33,14 @@ mv ${syncthingversion}-${syncthingrelease} syncthing
 echo -e "####增加执行权限####"
 cd syncthing
 sudo chmod +x syncthing
-~/syncthing/syncthing
-sed -i "s/127.0.0.1/0.0.0.0/g" $file
+/home/pi/syncthing/syncthing
 echo -e "####以服务的方式后台运行####"
 sudo cp ${startuppath}/syncthing /etc/init.d/
 sudo chmod +x /etc/init.d/syncthing
 echo -e "####开机自动启动####"
 sudo update-rc.d syncthing defaults
+echo -e "####开启网络访问####"
+sed -i "s/127.0.0.1/0.0.0.0/g" $file
 echo -e "####install ARIA2 安装下载器(服务版)####"
 sudo apt install -y aria2
 echo -e "####建立配置文件####"
