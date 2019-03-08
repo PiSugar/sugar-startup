@@ -1,6 +1,6 @@
 #/bin/bash
 startuppath='/home/pi/sugar-startup/data'
-syncthingrelease="v1.0.1-rc.2"
+syncthingrelease="v1.1.0"
 syncthingaddress="https://github.com/syncthing/syncthing/releases/download/"
 syncthingversion="syncthing-linux-arm"
 source="https://mirrors.tuna.tsinghua.edu.cn"
