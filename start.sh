@@ -55,7 +55,7 @@ chkconfig --add aria2c
 echo -e "####安装webUI（需用IP/docs 访问）####"
 apt-get -y install nginx
 sudo rm -rf /var/www/html
-sudo git clone https://github.com/ziahamza/webui-aria2.git /var/www/html
+#sudo git clone https://github.com/ziahamza/webui-aria2.git /var/www/html
 
 
 echo -e "####安装phddns花生壳动态解析客户端####"
