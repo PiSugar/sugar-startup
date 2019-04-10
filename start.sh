@@ -57,7 +57,7 @@ apt-get -y install nginx
 wget https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip
 unzip master.zip
 sudo mv /home/pi/AriaNg-DailyBuild-master/ /home/pi/aria2/ariang
-
+sudo cp /home/pi/sugar-startup/data/nginx.conf /etc/nginx/nginx.conf 
 
 
 echo -e "####安装phddns花生壳动态解析客户端####"
