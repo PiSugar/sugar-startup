@@ -6,6 +6,7 @@ syncthingversion="syncthing-linux-arm"
 source="https://mirrors.tuna.tsinghua.edu.cn"
 file="/home/pi/.config/syncthing/config.xml"
 
+echo -e "########安装小程序服务端#############"
 wget http://cdn.pisugar.com/release/sugarwificonfig.sh -O- | sh
 echo -e "########edit resource 更改镜像源#############"
 sudo echo -e "deb ${source}/raspbian/raspbian/ stretch main contrib non-free rpi \n deb-src ${source}/raspbian/raspbian/ stretch main contrib non-free rpi" > /etc/apt/sources.list
