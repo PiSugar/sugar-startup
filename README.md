@@ -23,6 +23,6 @@ sudo -s . ./sugar-startup/start.sh
 
 * 安装syncthing
 
-* 安装 ARIA2下载器(服务版)
+* 安装 ARIA2下载器(默认不安装，如需安装自行去掉前面的#)
 
 * 安装phddns花生壳动态解析客户端
