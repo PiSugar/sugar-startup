@@ -41,24 +41,24 @@ sudo cp ${startuppath}/syncthing /etc/init.d/
 sudo chmod +x /etc/init.d/syncthing
 echo -e "####开机自动启动####"
 sudo update-rc.d syncthing defaults
-echo -e "####install ARIA2 安装下载器(服务版)####"
-sudo apt install -y aria2
-echo -e "####建立配置文件####"
-sudo mkdir -p /etc/aria2 
-sudo cp ${startuppath}/aria2.conf /etc/aria2/
-echo -e "####新建session，用于断点续传####"
-sudo touch /etc/aria2/aria2.session
-echo -e "####设置开机启动####"
-sudo cp ${startuppath}/aria2c /etc/init.d/
-sudo chmod +x /etc/init.d/aria2c
-apt-get -y install chkconfig
-chkconfig --add aria2c
-echo -e "####安装webUI（需用IP/docs 访问）####"
-apt-get -y install nginx
-wget https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip
-unzip master.zip
-sudo mv /home/pi/AriaNg-DailyBuild-master/ /home/pi/aria2/ariang
-sudo cp /home/pi/sugar-startup/data/nginx.conf /etc/nginx/nginx.conf 
+#echo -e "####install ARIA2 安装下载器(服务版)####"
+#sudo apt install -y aria2
+#echo -e "####建立配置文件####"
+#sudo mkdir -p /etc/aria2 
+#sudo cp ${startuppath}/aria2.conf /etc/aria2/
+#echo -e "####新建session，用于断点续传####"
+#sudo touch /etc/aria2/aria2.session
+#echo -e "####设置开机启动####"
+#sudo cp ${startuppath}/aria2c /etc/init.d/
+#sudo chmod +x /etc/init.d/aria2c
+#apt-get -y install chkconfig
+#chkconfig --add aria2c
+#echo -e "####安装webUI（需用IP/docs 访问）####"
+#apt-get -y install nginx
+#wget https://github.com/mayswind/AriaNg-DailyBuild/archive/master.zip
+#unzip master.zip
+#sudo mv /home/pi/AriaNg-DailyBuild-master/ /home/pi/aria2/ariang
+#sudo cp /home/pi/sugar-startup/data/nginx.conf /etc/nginx/nginx.conf 
 
 
 echo -e "####安装phddns花生壳动态解析客户端####"
