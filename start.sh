@@ -31,6 +31,7 @@ echo -e "###unzip syncthing 解压syncthing####"
 tar -zxvf ${syncthingversion}-${syncthingrelease}.tar.gz
 echo -e "####change floder name 更改文件夹名称 便于设置服务#####"
 mv ${syncthingversion}-${syncthingrelease} syncthing
+sudo rm ${syncthingversion}-${syncthingrelease}.tar.gz
 echo -e "####增加执行权限####"
 cd syncthing
 sudo chmod +x syncthing
