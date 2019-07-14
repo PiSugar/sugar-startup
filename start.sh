@@ -13,7 +13,7 @@ sudo echo -e "deb ${source}/raspbian/raspbian/ stretch main contrib non-free rpi
 sudo echo -e "deb ${source}/raspberrypi/ stretch main ui \n deb-src ${source}/raspberrypi/ stretch main ui" > /etc/apt/sources.list.d/raspi.list
 
 echo -e "########update 更新系统#############"
-sudo apt update && sudo apt -y upgrade
+sudo apt update -y && sudo apt upgrade -y
 
 echo -e "########install pinyin 安装拼音输入法#############"
 sudo apt-get install -y fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin
