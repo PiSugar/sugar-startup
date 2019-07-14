@@ -13,6 +13,8 @@ sudo -s . ./sugar-startup/start.sh
 
 * 更改国内镜像源
 
+* 安装Pisugar微信小程序服务端
+
 * 更新系统
 
 * 安装拼音输入法
