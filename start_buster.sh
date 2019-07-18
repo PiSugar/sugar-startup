@@ -9,8 +9,8 @@ file="/home/pi/.config/syncthing/config.xml"
 echo -e "########安装小程序服务端#############"
 wget http://cdn.pisugar.com/release/sugarwificonfig.sh -O- | sh
 echo -e "########edit resource 更改镜像源#############"
-sudo echo -e "deb ${source}/raspbian/raspbian/ stretch main contrib non-free rpi \ndeb-src ${source}/raspbian/raspbian/ stretch main contrib non-free rpi" > /etc/apt/sources.list
-sudo echo -e "deb ${source}/raspberrypi/ stretch main ui \ndeb-src ${source}/raspberrypi/ stretch main ui" > /etc/apt/sources.list.d/raspi.list
+sudo echo -e "deb ${source}/raspbian/raspbian/ buster main contrib non-free rpi \ndeb-src ${source}/raspbian/raspbian/ buster main contrib non-free rpi" > /etc/apt/sources.list
+sudo echo -e "deb ${source}/raspberrypi/ buster main ui \ndeb-src ${source}/raspberrypi/ buster main ui" > /etc/apt/sources.list.d/raspi.list
 
 echo -e "########update 更新系统#############"
 sudo apt update -y && sudo apt upgrade -y
@@ -70,4 +70,3 @@ sudo apt-get -y autoremove
 
 echo "############finish start setting,enjoy.Now reboot############"
 sudo reboot
-

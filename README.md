@@ -8,6 +8,13 @@ Shell scripts to start your raspberry pi project.
 git clone https://github.com/PiSugar/sugar-startup.git
 sudo -s . ./sugar-startup/start.sh
 ```
+
+Buster版本的Raspbian执行：
+```
+git clone https://github.com/PiSugar/sugar-startup.git
+sudo -s . ./sugar-startup/start-buster.sh
+```
+
 初始化脚本执行以下内容：
 
 
