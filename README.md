@@ -12,7 +12,7 @@ sudo -s . ./sugar-startup/start.sh
 Buster版本的Raspbian执行：
 ```
 git clone https://github.com/PiSugar/sugar-startup.git
-sudo -s . ./sugar-startup/start-buster.sh
+sudo -s . ./sugar-startup/start_buster.sh
 ```
 
 初始化脚本执行以下内容：
