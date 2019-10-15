@@ -30,6 +30,8 @@ syncthinglink="http://cdn.pisugar.com/release/syncthing-linux-arm-v1.3.0.tar.gz"
 wget ${syncthinglink}
 echo -e "###unzip syncthing 解压syncthing####"
 tar -zxvf ${syncthingversion}-${syncthingrelease}.tar.gz
+echo -e "####clean older version 删除旧版本#####"
+sudo rm -r syncthing
 echo -e "####change floder name 更改文件夹名称 便于设置服务#####"
 mv ${syncthingversion}-${syncthingrelease} syncthing
 sudo rm ${syncthingversion}-${syncthingrelease}.tar.gz
