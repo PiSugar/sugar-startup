@@ -1,6 +1,6 @@
 #/bin/bash
 startuppath='/home/pi/sugar-startup/data'
-syncthingrelease="v1.2.1"
+syncthingrelease="v1.3.0"
 syncthingaddress="https://github.com/syncthing/syncthing/releases/download/"
 syncthingversion="syncthing-linux-arm"
 source="https://mirrors.tuna.tsinghua.edu.cn"
@@ -26,7 +26,7 @@ sudo apt-get install -y screen
 echo -e "########starting intall syncthing 开始安装syncthing#############"
 echo -e "###download syncthing 下载syncthing####"
 syncthinglink="${syncthingaddress}${syncthingrelease}/${syncthingversion}-${syncthingrelease}.tar.gz"
-syncthinglink="http://cdn.pisugar.com/release/syncthing-linux-arm-v1.2.1.tar.gz"
+syncthinglink="http://cdn.pisugar.com/release/syncthing-linux-arm-v1.3.0.tar.gz"
 wget ${syncthinglink}
 echo -e "###unzip syncthing 解压syncthing####"
 tar -zxvf ${syncthingversion}-${syncthingrelease}.tar.gz
