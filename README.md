@@ -3,17 +3,19 @@ Shell scripts to start your raspberry pi project.
 
 树莓派开机脚本，自动完成初始化
 
-只需要执行：
+
+Buster版本（19年4月以后绝大多数新版系统）的Raspbian执行：
+```
+git clone https://github.com/PiSugar/sugar-startup.git
+sudo -s . ./sugar-startup/start_buster.sh
+```
+
+老版本执行：
 ```
 git clone https://github.com/PiSugar/sugar-startup.git
 sudo -s . ./sugar-startup/start.sh
 ```
 
-Buster版本的Raspbian执行：
-```
-git clone https://github.com/PiSugar/sugar-startup.git
-sudo -s . ./sugar-startup/start_buster.sh
-```
 
 初始化脚本执行以下内容：
 
