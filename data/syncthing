@@ -15,7 +15,7 @@
 . /lib/lsb/init-functions
   
 DAEMON_NAME="syncthing"
-DAEMON_USER=pi
+DAEMON_USER=root
 DAEMON_PATH="/home/pi/syncthing/syncthing"
 DAEMON_OPTS=""
 DAEMON_PWD="${PWD}"
